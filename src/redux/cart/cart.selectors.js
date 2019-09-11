@@ -1,9 +1,9 @@
 import { createSelector } from 'reselect';
 
-const selectCar = state => state.cart;  // input selector get the slice of the state..in this case..the cart
+const selectCart = state => state.cart;  // input selector get the slice of the state..in this case..the cart
 
 export const selectCartItems = createSelector(
-    [selectCar],
+    [selectCart],
     cart => cart.cartItems
 );
 
