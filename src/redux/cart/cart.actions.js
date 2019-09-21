@@ -1,7 +1,8 @@
 import { 
     TOGGLE_CART_HIDDEN,
     ADD_ITEM,
-    CLEAR_ITEM_FROM_CART 
+    CLEAR_ITEM_FROM_CART,
+    REMOVE_ITEM 
 } from './cart.types';
 
 
@@ -18,5 +19,10 @@ export const addItem = (item) => ({
 
 export const clearItem = (item) => ({
     type: CLEAR_ITEM_FROM_CART,
+    payload: item
+});
+
+export const removeItem = (item) => ({
+    type: REMOVE_ITEM,
     payload: item
 });
