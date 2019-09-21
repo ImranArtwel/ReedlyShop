@@ -14,3 +14,8 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
     // return all cart items pluz new item with base quantity of 1
     return [...cartItems, {...cartItemToAdd, quantity: 1}]
 }
+
+
+
+
+
