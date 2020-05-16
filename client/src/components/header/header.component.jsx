@@ -6,11 +6,12 @@ import { auth } from "../../firebase/firebase.utils";
 import { selectCurrentUser } from "../../redux/user/user.selectors";
 import { selectCartHidden } from "../../redux/cart/cart.selectors";
 
-import { ReactComponent as Logo } from "../../assets/crown.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import {
   HeaderContainer,
+  HeaderTextContainer,
   LogoContainer,
   OptionsContainer,
   OptionLink,
@@ -22,7 +23,9 @@ const Header = ({ currentUser, hidden }) => (
     <LogoContainer to="/">
       <Logo className="logo" />
     </LogoContainer>
-
+    <HeaderTextContainer>
+      Bringing The Diverse African Culture To Your Doorstep
+    </HeaderTextContainer>
     <OptionsContainer>
       <OptionLink to="/shop">SHOP</OptionLink>
       {/* <OptionLink to="/shop">CONTACT</OptionLink> */}
